@@ -1,0 +1,3 @@
+这又是一个深度优先算法的例子，这并不是一个标准的DP算法的结构，但是同样可以按照DP算法的结构来描述。对于1-n个节点的BST,都可以看成是固定1-n中的每个节点然后将其左右分支的所有可能乘起来。对于每个固定节点的结果数目相加即为所求的结果。即组合数学中的乘法原理和加法原理。
+
+This is another example of DP algorithm, this solution doesn't follow the standard struct of DP(of course, it could),but solve it in cycle.For a BST of 1-n node, the possible BST number is sum of nth-Tree, which generate from fixed one of the BST node as root node. For every nth-Tree, the possible BST number is product of the possible left branch and possible right branch. basic principle can get from combinatorial Mathematics, namely Addition Principle and Multiplication Priciple. it's also easy to understand.
