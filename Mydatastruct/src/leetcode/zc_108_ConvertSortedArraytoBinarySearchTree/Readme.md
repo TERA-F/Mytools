@@ -1,0 +1,3 @@
+与普通的BST插入不同，这里的array是已经排好序的了，可以利用这里条件做二分法，递归的解决这个问题。需要注意的两点，一个是对于奇偶不同的array。求中值的方法是不同的，需要区别一下，另一个需要注意的是需要使用引用传入参数，否则会导致内存超过限制。
+
+This question is a little different from regular BST insert program, cause arra has been sorted, which can help you solve it in recursive way .But I miss two critical question. first is ,for odd and even array ,they two have different way to get middle subscript. other is I should pass parameter in reference way or will get out of memory error.

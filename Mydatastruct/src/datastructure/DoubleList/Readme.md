@@ -1,0 +1,4 @@
+虽然按照书上的例子写了一遍，但是还是有一个问题没有解决，这里的iterator和const_iterator是一个内部类。没有办法从外部调用，这个和STL中的iterator有很大的不同。STL中的iterator有更强的泛用性。但如果将iterator放到doubleList类的外部实现就没有办法访问Node结构体，因为他是private的。所以怎么写一个iterator还是一个需要继续考虑的问题
+
+
+Although I write doubleList.h with help from book, but there is a serious problem waitting for solving. iterator and cons_iterator is nested class in doublelist class, which is different from the STL iterator. Iterator in STL has stronger generalization ability. But if i write iterator class code out of doublelist class, iterator can't access to struct Node, cause it is private. so I have another question to think :how to write a more generalizative iterator 
