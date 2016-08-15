@@ -1,0 +1,19 @@
+public class Solution {
+    public String convertToTitle(int n) {
+        ArrayList<Integer> ret = new ArrayList<Integer>();
+        int tmp = n;
+        while(tmp!=0){
+            tmp--;
+            ret.add((tmp)%26);
+            tmp /=26;
+        }
+        // System.out.println(ret);
+        StringBuilder sb = new StringBuilder();
+        while(!ret.isEmpty()){
+            sb.append((char)('A'+ret.get(ret.size()-1)));
+            ret.remove(ret.size()-1);
+        }
+        // System.out.println(sb);
+        return new String(sb);
+    }
+}
